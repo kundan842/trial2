@@ -3,8 +3,7 @@ services:
   database:
     container_name: database
     build: ./database/
-    volumes:
-      - myapp:/var/lib/mysql
+   
   
   backend:
     container_name: backend
@@ -22,7 +21,5 @@ services:
     depends_on:
       - backend
 
-volumes:
-  myapp:
-  mymodule:
+
     
