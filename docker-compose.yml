@@ -25,17 +25,14 @@ services:
   frontend:
     container_name: frontend
     build: ./ReactFinal/
-    volumes:
-      - mymodule:/node_modules
-
+    
     ports:
       - 80:80
      
     depends_on:
       - backend
       
-volumes:
-mymodule:
+
 
      
 
