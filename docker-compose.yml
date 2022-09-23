@@ -12,18 +12,25 @@ services:
     logging:
       driver: "json-file"
       options:
-        max-size: "10m"
-        max-file: "10"
-
+        max-size: "50m"
+       
     depends_on:
       - database
+      
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
 
   frontend:
     container_name: frontend
     build: ./ReactFinal/
-    
     ports:
       - 80:80
+      logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
     depends_on:
       - backend
 
