@@ -34,9 +34,8 @@ services:
     depends_on:
       - backend
       
-      volumes:
-
-  mymodule:
+volumes:
+mymodule:
 
      
 
