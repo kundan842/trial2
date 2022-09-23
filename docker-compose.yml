@@ -11,7 +11,7 @@ services:
             logging:
             driver: "json-file"
             options:
-                max-size: "2048m"
+                max-size: 2048
 
     depends_on:
       - database
